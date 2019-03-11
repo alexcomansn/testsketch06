@@ -6,7 +6,7 @@ var count;
 function setup() 
 {
   createCanvas(windowWidth, windowHeight);
-  background(255, 250, 250, 250);
+  background(255);
   ellipseMode(CENTER);
   stroke(80, 0, 50, 200);
   fill(250, 80, 120, 120);
@@ -21,7 +21,7 @@ function setup()
 
 function draw() 
 {
-  background(255, 250, 250, 250);
+  background(255);
   myTree.swing();
 
   stroke(80, 0, 50, 200);
@@ -43,7 +43,7 @@ function draw()
 }
 
 function mousePressed() {
-  background(255, 250, 250, 250);
+  background(255);
   stroke(80, 0, 50, 200);
   myTree = new Tree(startPoint, direction);
   count = myTree.treeSize;
